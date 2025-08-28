@@ -1,28 +1,52 @@
 const btnLogin = document.querySelector("#btn-login");
 const btnRegister = document.querySelector("#btn-register");
 const modalLogin = document.querySelector("#modal-login");
-const modalregister = document.querySelector("#modal-register")
+const modalRegister = document.querySelector("#modal-register");
 const btnCancelLogin = document.querySelector("#btn-cancel-login");
-const btnCancelregister = document.querySelector("#btn-cancel-register");
+const btnCancelRegister = document.querySelector("#btn-cancel-register")
 
-btnLogin.addEventListener("click", (e) =>{
-    modalLogin.classList.remove("hide-modal");
-    modalLogin.classList.add("show-modal");
+function soma(num01, num02) {
+    const somar = num01 + num02;
+    console.log(somar);
+}
+
+soma (8, 6)
+
+// arrow function
+
+const multiplicar = (num01, num02) => {
+  return num01 * num02
+}
+function dividir(num01, num02) {
+  const dividir = num01 / num02 ;
+  console.log(dividir);
+}
+
+dividir(4, 2)
+
+
+
+
+console.log(multiplicar(5, 8));
+
+// addEventListener => Escuta o evento de click e executa a função 
+
+btnLogin.addEventListener("click", (e) => {
+  modalLogin.classList.remove("hide-modal");
+  modalLogin.classList.add("show-modal");
 })
 
-btnRegister.addEventListener("click", (e) =>{
-    modalregister.classList.remove("hide-modal");
-    modalregister.classList.add("show-modal");
+btnRegister.addEventListener("click", (e) => {
+  modalRegister.classList.remove("hide-modal");
+  modalRegister.classList.add("show-modal");
 })
 
-btnCancelLogin("clique", (e) =>{
-modalLogin.classList.add("hide-modal");
-modalLogin.classList.add("show-modal");
-
+btnCancelLogin.addEventListener("click", (e) => {
+  modalLogin.classList.remove("show-modal");
+  modalLogin.classList.add("hide-modal");
 })
 
-btnCancelregister.addEventListener("click", (e) =>{
-    modalregister.classList.remove("show-modal");
-    modalregister.classList.add("hde-moda");
-
+btnCancelRegister.addEventListener("click", (e) => {
+  modalRegister.classList.remove("show-modal");
+  modalRegister.classList.add("hide-modal");
 })

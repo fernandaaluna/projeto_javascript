@@ -5,7 +5,7 @@
 }
 
 body{
-    background: rgb(193, 30, 207);
+    background: rgb(14, 0, 15);
 }
 
 .container{
@@ -23,15 +23,15 @@ button{
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    background: rgb(49, 4, 109);
+    background: rgb(146, 131, 167);
     cursor: pointer;
-    color: rgb(232, 26, 153);
+    color: rgb(201, 166, 188);
     transition: all 350ms ease-in-out;
 }
 
 button:hover{
-    background: rgb(223, 12, 12);
-    color: rgb(48, 1, 46);
+    background: rgb(45, 94, 167);
+    color: rgb(58, 10, 55);
 }
 
 /* **************************************
