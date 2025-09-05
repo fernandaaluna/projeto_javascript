@@ -23,15 +23,15 @@ button{
     font-weight: bold;
     border: none;
     border-radius: 0.5rem;
-    background: rgb(62, 28, 7);
+    background: rgb(59, 27, 7);
     cursor: pointer;
-    color: rgb(201, 166, 188);
+    color: rgb(9, 0, 6);
     transition: all 350ms ease-in-out;
 }
 
 button:hover{
     background: rgb(71, 15, 34);
-    color: rgb(7, 1, 6);
+    color: rgb(9, 0, 8);
 }
 
 /* **************************************
@@ -100,4 +100,11 @@ color: rgb(27, 21, 3);
     padding: 0.5rem;
     font-size: 1.5rem;
     border-bottom: 0.5rem solid rgb(211, 199, 161);
+}
+
+.resultado_calcular{
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
 }
