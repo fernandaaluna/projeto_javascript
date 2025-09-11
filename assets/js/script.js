@@ -23,9 +23,6 @@ const calcular = (valor01, valor02) => {
   const multiplicar = valor01 * valor02;
   const dividir = valor01 / valor02;
 
-console.log(typeof valor01);
-
-
   return (resultado.innerHTML = `
 <div class="calcular">
   <div class="soma">${soma}</div>
@@ -85,12 +82,17 @@ btnCancelRegister.addEventListener("click", (e) => {
   modalRegister.classList.add("hide-modal");
 });
 
-// inputEmail.addEventListener("input", () =>{
-// resultado.innerHTML = inputEmail.value
-// })
+inputEmail.addEventListener("input", () => {
+  if (inputEmail.value.length > 2) {
+    console.log(inputEmail.value.length);
+    inputEmail.style.borderBottom = "0.5rem solid rgb(115, 13, 240)";
+  } else {
+    inputEmail.style.borderBottom = "0.5rem solid rgb(30, 92, 215)";
+  }
+});
 
 inputEmail.addEventListener("focus", () => {
-  inputEmail.style.borderBottom = "0.5rem solid rgb(146, 99, 203)";
+  inputEmail.style.borderBottom = "0.5rem solid rgb(202, 44, 44)";
 });
 
 inputSenha.addEventListener("focus", () => {
@@ -101,7 +103,7 @@ btnLoginOpen.addEventListener("click", (e) => {
   e.preventDefault();
   const email = inputEmail.value;
   const senha = inputSenha.value;
-  resultado.classList.add("resultado_calcular")
+  resultado.classList.add("resultado_calcular");
   calcular(email, senha);
 });
 
